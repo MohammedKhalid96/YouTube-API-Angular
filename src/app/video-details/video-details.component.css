@@ -17,7 +17,8 @@
   padding: 0.5em 1.5em;
 }
 
-.video-title-wrap {
+.video-title-wrap,
+.rating-wrap {
   border-bottom: 2px solid #e2e2e2;
   padding-bottom: 1em;
 }
@@ -30,4 +31,12 @@
   display: inline-block;
   color: #c4302b;
   margin-bottom: 1em;
+}
+
+.rating-wrap {
+  padding-top: 1em;
+}
+
+.rating-wrap h5 {
+  display: inline-block;
 }

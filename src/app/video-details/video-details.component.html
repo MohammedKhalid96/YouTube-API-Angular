@@ -3,7 +3,7 @@
 
   <div *ngFor="let detail of details" class="video-details-wrap">
     <div class="video-img">
-      <img src="{{ detail.snippet.thumbnails.maxres.url }}" class="width-100" />
+      <img src="{{ detail.snippet.thumbnails.high.url }}" class="width-100" />
     </div>
 
     <div class="video-data">
@@ -15,11 +15,19 @@
             </h4>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn add-to-fav-btn">
+            <button
+              (click)="setSaving($event.target, 'Added To Favorite')"
+              class="btn add-to-fav-btn"
+            >
               Add To Favourits
             </button>
           </div>
         </div>
+      </div>
+
+      <div class="rating-wrap sides-padding">
+        <h5>Rate Now</h5>
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
       </div>
 
       <div class="description-wrap sides-padding">

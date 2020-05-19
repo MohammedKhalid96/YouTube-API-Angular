@@ -24,4 +24,9 @@ export class VideoDetailsComponent implements OnInit {
             });
         });
     }
+
+    setSaving(element, text) {
+        element.textContent = text;
+        element.disabled = true;
+    }
 }

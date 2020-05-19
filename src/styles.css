@@ -1,3 +1,5 @@
+@import '~css-star-rating/css/star-rating';
+
 @font-face {
   font-family: trade-gothic;
   src: url(assets/fonts/trade-gothic/TradeGothicLT.otf);
@@ -32,4 +34,13 @@ button {
   cursor: pointer;
   outline: 0;
   border: 0;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+  outline: 0;
+  cursor: pointer;
 }

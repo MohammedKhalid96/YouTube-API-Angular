@@ -10,6 +10,7 @@ import { VideoDetailsComponent } from './video-details/video-details.component';
 import { HomeComponent } from './home/home.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { StarRatingModule } from 'angular-star-rating';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     Ng2SearchPipeModule,
     NgxPaginationModule,
     FormsModule,
+    StarRatingModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'video/:videoid', component: VideoDetailsComponent }
