@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
+## Choices & Decisions
+I used Ng2SearchPipeModule and NgxPaginationModule for table search and pagination instead of using 
+for example Angular Material, This my first time using Angular So I decided to challenge my self and build everything from scratch without any help of available libraries that gives me easy solutions.
+
+I also used Compodoc to generate documentation for this project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

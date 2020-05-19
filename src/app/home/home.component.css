@@ -34,6 +34,15 @@ thead {
   border-bottom: 2px solid #e2e2e2;
 }
 
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.table td {
+  padding: 0;
+}
+
 .search-box {
   padding: 0 2.4em;
   margin-bottom: 1em;
@@ -54,5 +63,3 @@ thead {
 .pagination /deep/ .ngx-pagination {
   padding-top: 1.1em;
 }
-
-

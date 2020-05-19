@@ -10,8 +10,6 @@ import { VideoDetailsComponent } from './video-details/video-details.component';
 import { HomeComponent } from './home/home.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { environment } from '../environments/environment'
-import { AngularFireModule } from 'angularfire2'
 
 @NgModule({
   declarations: [
