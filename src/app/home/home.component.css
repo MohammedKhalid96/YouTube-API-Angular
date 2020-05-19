@@ -1,0 +1,58 @@
+table {
+  width: 95%;
+  border: 2px solid #e2e2e2;
+  margin: auto;
+  padding: 1em;
+  border-collapse: collapse;
+}
+
+table img {
+  width: 180px;
+}
+
+.details-btn {
+  padding: 0.5em 1em;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.details-btn:hover {
+  background: #c4302b;
+  color: #fff;
+}
+
+th {
+  padding: 2em 0;
+  text-align: left;
+}
+
+td,
+thead {
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.search-box {
+  padding: 0 2.4em;
+  margin-bottom: 1em;
+}
+
+.search-box input {
+  padding: 0.5em 1em 0.8em 1em;
+  border-radius: 2em;
+  outline: 0;
+  background: #e2e2e2;
+}
+
+.pagination /deep/ .ngx-pagination .current {
+  background: #c4302b;
+  border-radius: 50%;
+}
+
+.pagination /deep/ .ngx-pagination {
+  padding-top: 1.1em;
+}
+
+

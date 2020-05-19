@@ -1,0 +1,35 @@
+@font-face {
+  font-family: trade-gothic;
+  src: url(assets/fonts/trade-gothic/TradeGothicLT.otf);
+  src: url(/assets/fonts/trade-gothic/Trade\Gothic\LT.eot)
+      format("embedded-opentype"),
+    url(/assets/fonts/trade-gothic/Trade\Gothic\LT.woff2) format("woff2"),
+    url(/assets/fonts/trade-gothic/TradeGothicLT.woff) format("woff"),
+    url(/assets/fonts/trade-gothic/Trade\Gothic\LT.ttf) format("truetype"),
+    url(/assets/fonts/trade-gothic/TradeGothicLT.svg) format("svg");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 2em 0;
+  font-family: trade-gothic;
+}
+
+a {
+  display: inline-block;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.sides-padding {
+  padding: 0 2em;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+}

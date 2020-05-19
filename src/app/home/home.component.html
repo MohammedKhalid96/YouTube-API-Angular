@@ -1,0 +1,48 @@
+<div>
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="Search by video title"
+      [(ngModel)]="searchText"
+    />
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>publish Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="
+            let video of videos
+              | filter: searchText
+              | paginate: { itemsPerPage: 7, currentPage: p }
+          "
+        >
+          <td>
+            <img src="{{ video.snippet.thumbnails.medium.url }}" />
+          </td>
+          <td>{{ video.snippet.title }}</td>
+          <td>{{ video.snippet.publishTime }}</td>
+          <td>
+            <a [routerLink]="['/video', video.id.videoId]" class="details-btn"
+              >Details</a
+            >
+          </td>
+        </tr>
+      </tbody>
+      <div class="s">
+        <pagination-controls
+          (pageChange)="p = $event"
+          class="pagination"
+        ></pagination-controls>
+      </div>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div>
+  <a routerLink="/" class="home-link sides-padding">Home</a>
+
+  <div *ngFor="let detail of details" class="video-details-wrap">
+    <div class="video-img">
+      <img src="{{ detail.snippet.thumbnails.maxres.url }}" class="width-100" />
+    </div>
+
+    <div class="video-data">
+      <div class="video-title-wrap sides-padding">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="video-title">
+              {{ detail.snippet.title }}
+            </h4>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn add-to-fav-btn">
+              Add To Favourits
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="description-wrap sides-padding">
+        <span class="video-upload-time">
+          {{ detail.snippet.publishedAt }}
+        </span>
+
+        <p class="video-description">
+          {{ detail.snippet.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

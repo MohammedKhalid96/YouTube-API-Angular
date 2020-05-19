@@ -1,0 +1,33 @@
+.video-img img {
+  height: 550px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.home-link {
+  margin-bottom: 2em;
+  color: #c4302b;
+  text-decoration: none;
+}
+
+.add-to-fav-btn {
+  background: #c4302b;
+  border: 0;
+  color: #fff;
+  padding: 0.5em 1.5em;
+}
+
+.video-title-wrap {
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 1em;
+}
+
+.description-wrap {
+  padding-top: 1em;
+}
+
+.video-upload-time {
+  display: inline-block;
+  color: #c4302b;
+  margin-bottom: 1em;
+}
